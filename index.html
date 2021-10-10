@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Digimon Favs</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Digimon</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#todos"
+                >Todos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#favoritos">Favoritos♥</a>
+              <!-- <div class=" ">
+      
+    </div> -->
+            </li>
+          </ul>
+          <!-- <form class="d-flex" >
+              <input class="form-control me-2" type="search" placeholder="Busca tu digimon" aria-label="Search" id="input-search">
+              <button class="btn btn-outline-success" type="button" id="btn-search">Buscar</button>
+            </form> -->
+        </div>
+      </div>
+    </nav>
+    <main class="container" id="todos">
+      <h1 class="container--titulo">Elija su digimon favorito</h1>
+      <!-- <div class="container-main--filter d-flex justify-content-around">
+        <label
+          ><input type="checkbox" id="check-adventure" />Digimon
+          Adventure</label
+        >
+        <label><input type="checkbox" id="check-tamers" />Digimon Tamers</label>
+        <label
+          ><input type="checkbox" id="check-frontier" />Digimon Frontier</label
+        >
+        <label><input type="checkbox" id="check-tri" />Digimon Tri</label>
+      </div> -->
+      <section class="container-main d-flex">
+        <div
+          class="container-main--cards d-flex justify-content-center flex-wrap"
+          id="container-digimon"
+        >
+          <div class="card adventure" style="width: 18rem; margin: 1rem">
+            <img
+              src="https://cdna.artstation.com/p/assets/images/images/025/571/946/4k/migueru-art-3.jpg?1586225596"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-center flex-column">
+              <h5 class="card-title" style="text-align: center">Agumon</h5>
+              <a href="#" class="btn btn-primary" id="agumon"
+                >Añadir a favoritos</a
+              >
+            </div>
+          </div>
+          <div class="card frontier" style="width: 18rem; margin: 1rem">
+            <img
+              src="https://64.media.tumblr.com/e5c02169bdd6c33d4822b68df398cd2a/tumblr_npx1pf5oMq1uy2lgno1_640.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-center flex-column">
+              <h5 class="card-title" style="text-align: center">Agunimon</h5>
+              <a href="#" class="btn btn-primary" id="agunimon"
+                >Añadir a favoritos</a
+              >
+            </div>
+          </div>
+          <div class="card tri" style="width: 18rem; margin: 1rem">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/aefd1a11-31a4-4522-a7d2-8b707364e580/dc1lzp4-4c9059fa-2142-4809-88ac-c1418ecae4ea.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-center flex-column">
+              <h5 class="card-title" style="text-align: center">Meicoomon</h5>
+              <a href="#" class="btn btn-primary" id="meicoomon"
+                >Añadir a favoritos</a
+              >
+            </div>
+          </div>
+          <div class="card tri" style="width: 18rem; margin: 1rem">
+            <img
+              src="https://i.pinimg.com/originals/cf/2d/b8/cf2db8b3834d377be44b13e09964b14d.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-center flex-column">
+              <h5 class="card-title" style="text-align: center">Rosemon</h5>
+              <a href="#" class="btn btn-primary" id="rosemon"
+                >Añadir a favoritos</a
+              >
+            </div>
+          </div>
+          <div class="card adventure" style="width: 18rem; margin: 1rem">
+            <img
+              src="https://images.everyeye.it/img-notizie/digimon-adventure-angewomon-sexy-cosplay-khainsaw-v3-449594-1280x960.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-center flex-column">
+              <h5 class="card-title" style="text-align: center">Angewomon</h5>
+              <a href="#" class="btn btn-primary" id="angewomon"
+                >Añadir a favoritos</a
+              >
+            </div>
+          </div>
+          <div class="card frontier" style="width: 18rem; margin: 1rem">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d62234ed-0880-4e4e-90cb-3902ce10675d/d80m4ev-9df14d24-cbf9-4283-938c-63c7c6b63723.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q2MjIzNGVkLTA4ODAtNGU0ZS05MGNiLTM5MDJjZTEwNjc1ZFwvZDgwbTRldi05ZGYxNGQyNC1jYmY5LTQyODMtOTM4Yy02M2M3YzZiNjM3MjMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AcehaWDCeGlDCgh8ffnT19fxFRikfhQjoFtm3_2OQhA"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-center flex-column">
+              <h5 class="card-title" style="text-align: center">Blitzmon</h5>
+              <a href="#" class="btn btn-primary" id="blitzmon"
+                >Añadir a favoritos</a
+              >
+            </div>
+          </div>
+          <div class="card adventure" style="width: 18rem; margin: 1rem">
+            <img
+              src="https://pm1.narvii.com/6369/b9fd67a692a22bc4e2bdec400f6f041970b06367_hq.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-center flex-column">
+              <h5 class="card-title" style="text-align: center">Raidramon</h5>
+              <a href="#" class="btn btn-primary" id="raidramon"
+                >Añadir a favoritos</a
+              >
+            </div>
+          </div>
+          <div class="card tamers" style="width: 18rem; margin: 1rem">
+            <img
+              src="https://64.media.tumblr.com/b04fa2e3b2d85892f85a3299e225ade9/7bcc5db018af7d06-98/s1280x1920/76077d6651248767426f987087c9e2f492ddc6aa.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-center flex-column">
+              <h5 class="card-title" style="text-align: center">Gargomon</h5>
+              <a href="#" class="btn btn-primary" id="gargomon"
+                >Añadir a favoritos</a
+              >
+            </div>
+          </div>
+          <div class="card adventure" style="width: 18rem; margin: 1rem">
+            <img
+              src="https://i.pinimg.com/originals/30/dc/d5/30dcd588435a7b5f7e429838d2e51f53.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-center flex-column">
+              <h5 class="card-title" style="text-align: center">Submarimon</h5>
+              <a href="#" class="btn btn-primary" id="submarimon"
+                >Añadir a favoritos</a
+              >
+            </div>
+          </div>
+          <div class="card tamers" style="width: 18rem; margin: 1rem">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ea914385-70d7-476d-aa3b-37d0c449c464/db7xwjb-02fa6d8d-c36c-4806-86c2-9719f586e17d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VhOTE0Mzg1LTcwZDctNDc2ZC1hYTNiLTM3ZDBjNDQ5YzQ2NFwvZGI3eHdqYi0wMmZhNmQ4ZC1jMzZjLTQ4MDYtODZjMi05NzE5ZjU4NmUxN2QuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xteYarJvq-FJM1W25gO6Ce6nVCIDIe6PQXojzYS1bZk"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-center flex-column">
+              <h5 class="card-title" style="text-align: center">Guilmon</h5>
+              <a href="#" class="btn btn-primary" id="guilmon"
+                >Añadir a favoritos</a
+              >
+            </div>
+          </div>
+          <div class="card adventure" style="width: 18rem; margin: 1rem">
+            <img
+              src="https://gartic.com.br/imgs/mural/ma/mateus_kun/garurumon-o-raio-da-amizade-2.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-center flex-column">
+              <h5 class="card-title" style="text-align: center">Garurumon</h5>
+              <a href="#" class="btn btn-primary" id="garurumon"
+                >Añadir a favoritos</a
+              >
+            </div>
+          </div>
+          <div class="card tamers" style="width: 18rem; margin: 1rem">
+            <img
+              src="https://i.pinimg.com/originals/28/d2/2f/28d22ff1a969daa2950ff7ac789fe613.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-center flex-column">
+              <h5 class="card-title" style="text-align: center">Beelzemon</h5>
+              <a href="#" class="btn btn-primary" id="beelzemon"
+                >Añadir a favoritos</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="bg-dark" id="section-fav">
+      <h2 class="light" style="color: white;">Favoritos</h2>
+      <div
+        id="favoritos"
+        class="container-fluid d-flex flex-wrap justify-content-center"
+      ></div>
+    </section>
+
+    
+
+    <footer class="container-fluid bg-primary d-flex justify-content-center">
+      <h3 style="font-size: 1rem">Sitio web creado por Sebastian Romay</h3>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
